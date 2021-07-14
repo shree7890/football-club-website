@@ -9,11 +9,90 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .container{
-    width:1160px;
+   width: 1160px;
+    margin: 0 auto;
 }
 html{
     scroll-behavior: smooth;
 }
+img{
+    width: 100%;
+}
 a{
     text-decoration: none;
 }
+/* top-banner-section-start */
+.top-banner-section{
+    background: #2D25A0;
+    padding:80px 0px;
+}
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 102px;
+}
+.banner-title {
+    margin-top: 110px;
+}
+
+.banner-title h2 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 64px;
+    width: 485px;
+    line-height: 82px;
+}
+.live-watch {
+    margin-top: 37px;
+}
+.live-watch a {
+    background: #E02C6D;
+    padding: 10px 24px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    display: inline-block;
+    transition: .5s;
+}
+.live-watch a::before {
+    content: "";
+    position: absolute;
+    left: -50%;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #FF4406;
+    z-index: -1;
+    transition: .5s;
+}
+.live-watch a::after {
+    content: "";
+    position: absolute;
+    right: -50%;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #FF4406;
+    z-index: -1;
+    transition: .5s;
+}
+.live-watch a:hover::before{
+    width: 50%;
+    left:0;
+}
+.live-watch a:hover::after{
+    width: 50%;
+    right:0;
+}
+.fa-arrow-right {
+    margin-left: 8px;
+}
+.banner-image img {
+    width: 556px;
+    height: 438px;
+    margin-top: 55px;
+}
+/* top-banner-section-end */
